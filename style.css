@@ -1,0 +1,264 @@
+:root{
+    --text-color:#1a1c20;
+    --link-color:#4176ee;
+    --background-color:#eeeff1;
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+a{
+    text-decoration: none;
+    color: var(--link-color);
+}
+/* navbar section */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+
+}
+nav .right a{
+    color: var(--text-color);
+    margin: 0 15px;
+}
+nav .right a span{
+    margin-left: 5px;
+}
+/* hero section */
+.hero_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+
+}
+.hero_section .text{
+    flex: 5;
+
+}
+.hero_section .text h2{
+    font-size: 45px;
+
+}
+.hero_section .text .links{
+    margin-top: 25px;
+}
+.hero_section .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.hero_section .text .links a:hover{
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+.hero_section .headshot{
+    flex: 5;
+    display: flex;
+    justify-content: right;
+}
+.hero_section .headshot img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+
+
+}
+
+.skill_section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.skill_section h2{
+    font-size: 35px;
+    text-align: center;
+}
+.skill_section .text{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.skill_section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skill_section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+
+
+}
+
+.skill_section .cells .cell img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.skill_section .cells .cell span{
+    font-size: 20px;
+}
+/* projects */
+.project_section{
+   
+    margin-bottom: 100px;
+    text-align: left;
+}
+
+.project_section h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding: 0 50px;
+}
+.project_section p{
+    font-size: 1rem;
+    color: #302c2c;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.project_section .pro{
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.project_section .pro .text h3{
+    font-size: 20px;
+    color: #443e3e;
+    margin-top: 10px;
+
+}
+.project_section .pro .text  p{
+    font-size: 18px;
+}
+.project_section .pro .text .buttons
+{
+    margin-top: 20px;
+}
+.project_section .pro .text .buttons .code{
+    
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+}
+.project_section .pro .text .buttons .link{
+   
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+}
+.project_section .pro .text .buttons .link:hover{
+    border: 2px solid var(--link-color);
+}
+.project_section .pro .text .buttons .code:hover{
+    border:2px solid var(--link-color);
+}
+
+
+
+
+/* contact */
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text {
+    flex: 3;
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid var(--link-color);
+    border-radius: 10px;
+}
+
+.contact-section .group form button {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--link-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid var(--link-color);
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.contact-section .group form button:hover {
+    filter: brightness(0.9);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(73, 68, 68, 0.463);
+    color: white;
+}
